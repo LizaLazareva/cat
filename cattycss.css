@@ -1,0 +1,114 @@
+/* Общие стили для фона с лапками */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff6b6b 20%, #f0d77b 80%);
+    color: #333;
+    text-align: center;
+    
+    /* Добавляем паттерн с лапками */
+    position: relative;
+}
+
+/* Контейнер для лапок */
+.paws-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+    pointer-events: none;
+    background: url('https://gas-kvas.com/uploads/posts/2023-01/1674651747_gas-kvas-com-p-lapa-risunok-konturnii-9.jpg'); /* Используйте ваше изображение лапок */
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+
+/* Стили для навигационных кнопок */
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6b6b;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Контейнер с отступом */
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+/* Стили для кнопки-кота */
+.cat-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.cat-button {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    background-image: url('https://avatars.mds.yandex.net/i?id=1008993f181e95b80ef74406ef4940e3a78b2ca1-10544851-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Маленький раздел контактов */
+.contacts {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 6px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    font-weight: 600;
+}
+
+.contacts a {
+    margin: 5px;
+    text-decoration: none;
+    color: #ff6b6b;
+    transition: color 0.3s;
+    display: block;
